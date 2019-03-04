@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/snoozeDev/voyages-corsaire/issues"
   },
-  "homepage": "https://github.com/snoozeDev/voyages-corsaire#readme"
+  "homepage": "https://github.com/snoozeDev/voyages-corsaire#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
 }
