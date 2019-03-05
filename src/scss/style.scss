@@ -1,21 +1,14 @@
-@import "variables";
+/*******************
+*
+* Bootstrap4
+*
+********************/
 @import "assets/bootstrap4";
-
-body{
-  margin: 0;
-  padding: 0;
-}
-
-.wrapper{
-  height: 200%;
-}
-
-#trigger{
-  min-width: 1px;
-}
-
-#target{
-  height: 50px;
-  width: 50px;
-  background-color: blue;
-}
+/*******************
+*
+* Custom CSS
+*
+********************/
+@import "variables";
+@import "theme";
+@import "fixes";

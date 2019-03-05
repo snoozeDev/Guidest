@@ -1,3 +1,8 @@
+/*******************
+*
+* Bootstrap4
+*
+********************/
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -6012,17 +6017,63 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+/*******************
+*
+* Custom CSS
+*
+********************/
+/*************
+ * Variables
+ *************/
+/*************
+ * Main Theme
+ *************/
 body {
   margin: 0;
   padding: 0; }
 
-.wrapper {
-  height: 200%; }
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden; }
 
-#trigger {
-  min-width: 1px; }
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); }
 
-#target {
-  height: 50px;
-  width: 50px;
-  background-color: blue; }
+header .container {
+  position: relative;
+  z-index: 2; }
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1; }
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black no-repeat center center scroll; }
+  header video {
+    display: none; } }
+
+/*************
+ * Fixes
+ *************/
+div > a[title~='Hosted'] {
+  display: none !important; }

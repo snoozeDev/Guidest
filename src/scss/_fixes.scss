@@ -1,0 +1,6 @@
+/*************
+ * Fixes
+ *************/
+div > a[title~='Hosted']{
+  display: none !important;
+}
