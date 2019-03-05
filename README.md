@@ -27,8 +27,6 @@
 │   │   ├── mstile-150x150.png
 │   │   ├── safari-pinned-tab.svg
 │   │   └── site.webmanifest
-│   ├── img
-│   │   └── voyages-corsaire-1080p.mp4
 │   ├── index.html
 │   └── js
 │       ├── scripts.js
