@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/snoozeDev/voyages-corsaire#readme",
   "devDependencies": {
+    "bootstrap": "^4.3.1",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-clean-css": "^4.0.0",
