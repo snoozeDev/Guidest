@@ -40,7 +40,7 @@
     │   ├── animation.js
     │   ├── bootstrap.js
     │   └── custom-javascript.js
-    ├── scss
+    └── scss
         ├── _fixes.scss
         ├── _theme.scss
         ├── _variables.scss
