@@ -6025,6 +6025,24 @@ a.text-dark:hover, a.text-dark:focus {
 /*************
  * Variables
  *************/
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Montserrat/Montserrat-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype"); }
+
 /*************
  * Main Theme
  *************/
@@ -6071,14 +6089,18 @@ header {
         color: white; }
     header .content-wrapper .cta-btn button {
       margin-top: 20px;
-      padding: 5px 20px 5px 20px;
-      border-radius: 25px;
+      padding: 10px 20px 10px 20px;
+      border-radius: 35px;
       background-clip: padding-box;
       /* stops bg color from leaking outside the border: */
       background-color: #28a745;
       border: none;
       color: white;
-      font-weight: 600; }
+      font: 700 35px "Montserrat", sans-serif;
+      -webkit-transition: font-size 0.2s;
+      transition: font-size 0.2s; }
+      header .content-wrapper .cta-btn button:hover {
+        font-size: 40px; }
 
 /*************
  * Fixes

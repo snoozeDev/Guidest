@@ -65,13 +65,17 @@ header {
     .cta-btn{
       button{
         margin-top: 20px;
-        padding: 5px 20px 5px 20px;
-        @include border-radius(25px);
+        padding: 10px 20px 10px 20px;
+        @include border-radius(35px);
         background-color: $green;
         border: none;
         color: white;
-        //font-weight: 600;
-        font: 600 35px Serif;
+        font: $font-cta;
+        @include transition(font-size .2s);
+
+        &:hover{
+          font-size: 40px;
+        }
       }
     }
   }

@@ -2,9 +2,16 @@
  * Variables
  *************/
 
+// Font-faces
+@include font-face("Montserrat", '../fonts/Montserrat/Montserrat-Regular', 400, normal, ttf);
+@include font-face("Montserrat", '../fonts/Montserrat/Montserrat-Medium', 500, normal, ttf);
+@include font-face("Montserrat", '../fonts/Montserrat/Montserrat-Bold', 700, normal, ttf);
+
+//Font-styles
+$Montserrat: 'Montserrat', sans-serif;;
+
+//Fonts
+$font-cta: 700 35px $Montserrat;
+
 // Colors
 $green: #2BC016 !default;
-
-
-// Fonts
-$font-cta: 35px 600;
