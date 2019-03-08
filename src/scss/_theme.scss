@@ -4,6 +4,7 @@
 body{
   margin: 0;
   padding: 0;
+  //font-family: $Montserrat;
 }
 
 // --------
@@ -75,6 +76,10 @@ header {
 
         &:hover{
           font-size: 40px;
+        }
+        &:focus{
+          outline: none !important;
+          font-size: 35px;
         }
       }
     }

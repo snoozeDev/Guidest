@@ -1,3 +1,5 @@
+@import "mixins";
+@import "fonts";
 /*******************
 *
 * Bootstrap4
@@ -9,7 +11,6 @@
 * Custom CSS
 *
 ********************/
-@import "mixins";
 @import "variables";
 @import "theme";
 @import "fixes";
