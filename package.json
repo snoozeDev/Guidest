@@ -35,7 +35,6 @@
     "jarallax": "^1.10.7",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.7",
-    "scrollmagic": "^2.0.6",
     "uglifycss": "0.0.29"
   }
 }
