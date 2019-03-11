@@ -11,7 +11,7 @@
 ```$xslt
 .
 ├── README.md
-├── dist
+├── dist            # Deployment directory (uploaded to server)
 │   ├── css
 │   │   ├── style.css
 │   │   ├── style.min.css
@@ -35,7 +35,7 @@
 ├── gulpfile.js
 ├── package-lock.json
 ├── package.json
-└── src
+└── src             # Development directory
     ├── js
     │   ├── animation.js
     │   ├── bootstrap.js
