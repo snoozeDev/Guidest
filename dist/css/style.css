@@ -6050,65 +6050,37 @@ body {
   margin: 0;
   padding: 0; }
 
-header {
-  position: relative;
-  background-color: black;
-  height: 100vh;
-  min-height: 25rem;
-  min-width: 100%;
-  overflow: hidden; }
-  header video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%); }
-  header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: darkgrey;
-    opacity: 0.3;
-    z-index: 1; }
-  header .content-wrapper {
-    position: relative;
-    z-index: 2; }
-    header .content-wrapper #logo-wrapper {
-      min-height: 70px; }
-    header .content-wrapper .tag-content {
-      margin-top: calc(50vh - 80px);
-      margin-top: -moz-calc(50vh - 80px); }
-      header .content-wrapper .tag-content h1 {
-        color: white; }
-    header .content-wrapper .cta-btn button {
-      margin-top: 20px;
-      padding: 10px 20px 10px 20px;
-      border-radius: 35px;
-      background-color: #28a745;
-      border: none;
-      color: white;
-      font: 700 35px "Montserrat";
-      -webkit-transition: font-size 0.2s;
-      transition: font-size 0.2s; }
-      @media (prefers-reduced-motion: reduce) {
-        header .content-wrapper .cta-btn button {
-          -webkit-transition: none;
-          transition: none; } }
-      header .content-wrapper .cta-btn button:hover {
-        font-size: 40px; }
-      header .content-wrapper .cta-btn button:focus {
-        outline: none !important;
-        font-size: 35px; }
+header #logo-wrapper {
+  min-height: 70px; }
+
+header .cta-btn button {
+  margin-top: 20px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 35px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font: 700 35px "Montserrat";
+  -webkit-transition: font-size 0.2s;
+  transition: font-size 0.2s; }
+  @media (prefers-reduced-motion: reduce) {
+    header .cta-btn button {
+      -webkit-transition: none;
+      transition: none; } }
+  header .cta-btn button:hover {
+    font-size: 40px; }
+  header .cta-btn button:focus {
+    outline: none !important;
+    font-size: 35px; }
+
+.section-block {
+  padding: 20px 0 20px 0; }
 
 /*************
  * Fixes
  *************/
 div > a[title~='Hosted'] {
   display: none !important; }
+
+.boop {
+  min-height: 1vh; }

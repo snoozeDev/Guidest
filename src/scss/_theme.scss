@@ -12,56 +12,57 @@ body{
 // --------
 
 header {
-  position: relative;
-  background-color: black;
-  height: 100vh;
-  min-height: 25rem;
-  min-width: 100%;
-  overflow: hidden;
+  //position: relative;
+  //background-color: black;
+  //height: 100vh;
+  //min-height: 25rem;
+  //min-width: 100%;
+  //overflow: hidden;
 
-  video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
+  //video {
+  //  position: absolute;
+  //  top: 50%;
+  //  left: 50%;
+  //  min-width: 100%;
+  //  min-height: 100%;
+  //  width: auto;
+  //  height: auto;
+  //  z-index: 0;
+  //  -ms-transform: translateX(-50%) translateY(-50%);
+  //  -moz-transform: translateX(-50%) translateY(-50%);
+  //  -webkit-transform: translateX(-50%) translateY(-50%);
+  //  transform: translateX(-50%) translateY(-50%);
+  //}
 
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: darkgrey;
-    opacity: 0.3;
-    z-index: 1;
-  }
-
-  .content-wrapper {
-    position: relative;
-    z-index: 2;
+  //.overlay {
+  //  position: absolute;
+  //  top: 0;
+  //  left: 0;
+  //  height: 100%;
+  //  width: 100%;
+  //  background-color: darkgrey;
+  //  opacity: 0.3;
+  //  z-index: 1;
+  //}
+  //
+  //.header-wrapper {
+  //  min-height: 100%;
+  //  position: relative;
+  //  z-index: 2;
 
     #logo-wrapper{
       min-height: 70px;
     }
 
-    .tag-content{
-      margin-top: calc(50vh - 80px);
-      margin-top: -webkit-calc(50vh - 80px);
-      margin-top: -moz-calc(50vh - 80px);
-
-      h1 {
-        color: white;
-      }
-    }
+    //.tag-content{
+    //  margin-top: calc(50vh - 80px);
+    //  margin-top: -webkit-calc(50vh - 80px);
+    //  margin-top: -moz-calc(50vh - 80px);
+    //
+    //  h1 {
+    //    color: white;
+    //  }
+    //}
 
     .cta-btn{
       button{
@@ -84,7 +85,7 @@ header {
       }
     }
   }
-}
+//}
 
 //TODO: Change background img for mobile
 //@media (pointer: coarse) and (hover: none) {
@@ -95,3 +96,11 @@ header {
 //    display: none;
 //  }
 //}
+
+// --------
+// Sections
+// --------
+
+.section-block {
+  padding: 20px 0 20px 0;
+}
