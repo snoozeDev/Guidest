@@ -12,80 +12,38 @@ body{
 // --------
 
 header {
-  //position: relative;
-  //background-color: black;
-  //height: 100vh;
-  //min-height: 25rem;
-  //min-width: 100%;
-  //overflow: hidden;
+  min-height: 100vh;
 
-  //video {
-  //  position: absolute;
-  //  top: 50%;
-  //  left: 50%;
-  //  min-width: 100%;
-  //  min-height: 100%;
-  //  width: auto;
-  //  height: auto;
-  //  z-index: 0;
-  //  -ms-transform: translateX(-50%) translateY(-50%);
-  //  -moz-transform: translateX(-50%) translateY(-50%);
-  //  -webkit-transform: translateX(-50%) translateY(-50%);
-  //  transform: translateX(-50%) translateY(-50%);
-  //}
+  h1, #countdown {
+    color: white;
+  }
 
-  //.overlay {
-  //  position: absolute;
-  //  top: 0;
-  //  left: 0;
-  //  height: 100%;
-  //  width: 100%;
-  //  background-color: darkgrey;
-  //  opacity: 0.3;
-  //  z-index: 1;
-  //}
-  //
-  //.header-wrapper {
-  //  min-height: 100%;
-  //  position: relative;
-  //  z-index: 2;
+  #logo-wrapper {
+    min-height: 70px;
+  }
 
-    #logo-wrapper{
-      min-height: 70px;
-    }
+  .cta-btn {
+    button {
+      margin-top: 20px;
+      padding: 10px 20px 10px 20px;
+      @include border-radius(35px);
+      background-color: $green;
+      border: none;
+      color: white;
+      font: $font-cta;
+      @include transition(font-size .2s);
 
-    //.tag-content{
-    //  margin-top: calc(50vh - 80px);
-    //  margin-top: -webkit-calc(50vh - 80px);
-    //  margin-top: -moz-calc(50vh - 80px);
-    //
-    //  h1 {
-    //    color: white;
-    //  }
-    //}
+      &:hover {
+        font-size: 40px;
+      }
 
-    .cta-btn{
-      button{
-        margin-top: 20px;
-        padding: 10px 20px 10px 20px;
-        @include border-radius(35px);
-        background-color: $green;
-        border: none;
-        color: white;
-        font: $font-cta;
-        @include transition(font-size .2s);
-
-        &:hover{
-          font-size: 40px;
-        }
-        &:focus{
-          outline: none !important;
-          font-size: 35px;
-        }
+      &:focus {
+        outline: none !important;
+        font-size: 35px;
       }
     }
   }
-//}
+}
 
 //TODO: Change background img for mobile
 //@media (pointer: coarse) and (hover: none) {

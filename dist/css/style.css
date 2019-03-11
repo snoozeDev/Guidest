@@ -6050,28 +6050,31 @@ body {
   margin: 0;
   padding: 0; }
 
-header #logo-wrapper {
-  min-height: 70px; }
-
-header .cta-btn button {
-  margin-top: 20px;
-  padding: 10px 20px 10px 20px;
-  border-radius: 35px;
-  background-color: #28a745;
-  border: none;
-  color: white;
-  font: 700 35px "Montserrat";
-  -webkit-transition: font-size 0.2s;
-  transition: font-size 0.2s; }
-  @media (prefers-reduced-motion: reduce) {
-    header .cta-btn button {
-      -webkit-transition: none;
-      transition: none; } }
-  header .cta-btn button:hover {
-    font-size: 40px; }
-  header .cta-btn button:focus {
-    outline: none !important;
-    font-size: 35px; }
+header {
+  min-height: 100vh; }
+  header h1, header #countdown {
+    color: white; }
+  header #logo-wrapper {
+    min-height: 70px; }
+  header .cta-btn button {
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 35px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font: 700 35px "Montserrat";
+    -webkit-transition: font-size 0.2s;
+    transition: font-size 0.2s; }
+    @media (prefers-reduced-motion: reduce) {
+      header .cta-btn button {
+        -webkit-transition: none;
+        transition: none; } }
+    header .cta-btn button:hover {
+      font-size: 40px; }
+    header .cta-btn button:focus {
+      outline: none !important;
+      font-size: 35px; }
 
 .section-block {
   padding: 20px 0 20px 0; }
