@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <link rel="stylesheet" href="css/style.min.css">
     
     <!--Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
@@ -29,6 +28,10 @@
     <meta property="og:description" content="Voyagez plus loin avec Voyages-Corsaire !">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.rd.com/wp-content/uploads/2017/11/10-alaska-10-Places-You-NEED-to-Go-in-2018-According-to-Travel-Experts_556662694-Maridav-1200x1200.jpg">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -55,15 +58,21 @@
 
     <section class="container section-block" id="block-1">
         <div class="d-flex flex-row">
-            <h1>Section 1</h1>
+            <!--<div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">-->
+                <h1 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Section 1</h1>
+            <!--</div>-->
         </div>
     </section>
 
+    <!--jQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Jarallax -->
     <script src="https://unpkg.com/jarallax@1.10/dist/jarallax.min.js"></script>
     <script src="https://unpkg.com/jarallax@1.10/dist/jarallax-video.min.js"></script>
     <script src="https://unpkg.com/jarallax@1.10/dist/jarallax-element.min.js"></script>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!--Custom Script-->
     <script type="text/javascript" src="js/scripts.min.js"></script>
 </body>
 </html>

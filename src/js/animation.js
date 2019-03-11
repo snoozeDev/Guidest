@@ -6,9 +6,9 @@
 // Description: File for JS animations
 // ===================================
 
-// Mark: Scroll Magic
-// init controller
-var controller = new ScrollMagic.Controller();
-
-// build scene
-var scene = new ScrollMagic.Scene();
+// // Mark: Scroll Magic
+// // init controller
+// var controller = new ScrollMagic.Controller();
+//
+// // build scene
+// var scene = new ScrollMagic.Scene();

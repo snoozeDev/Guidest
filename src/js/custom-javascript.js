@@ -5,13 +5,16 @@
 // Date: 2019-03-05
 // Description: Main JS file
 // ===================================
+
+//AOS
+AOS.init();
+
 // Video Parallax
 $('.jarallax').jarallax({
-    speed: 0.1
+    speed: 0.2
 });
 
 // Countdown timer
-
 var countDownDate = new Date("Apr 18, 2021 12:00:00").getTime();
 var x = setInterval(function () {
     var now = new Date().getTime();
