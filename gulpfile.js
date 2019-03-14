@@ -45,6 +45,7 @@ gulp.task( 'scripts', async function() {
         // Please add any customizations to this .js file only!
         paths.dev + '/js/custom-javascript.js'
     ];
+    var cookieconsent = paths.dev + '/js/cookies.js';
     gulp.src( scripts )
         .pipe( concat( 'scripts.min.js' ) )
         .pipe( uglify() )
@@ -52,6 +53,11 @@ gulp.task( 'scripts', async function() {
 
     gulp.src( scripts )
         .pipe( concat( 'scripts.js' ) )
+        .pipe( gulp.dest( paths.js ) );
+
+    gulp.src( cookieconsent )
+        .pipe( concat( 'cookies.min.js' ) )
+        .pipe( uglify() )
         .pipe( gulp.dest( paths.js ) );
 
 });
