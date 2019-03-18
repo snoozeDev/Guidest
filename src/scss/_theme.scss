@@ -10,6 +10,9 @@ body{
 // --------
 // Header
 // --------
+.header-wrapper{
+  min-height: 100vh;
+}
 
 header {
   min-height: 100vh;
@@ -22,8 +25,13 @@ header {
     min-height: 70px;
   }
 
+  #countdown {
+    margin-top: 40px;
+  }
+
   .cta-btn {
     button {
+      width: auto;
       margin-top: 20px;
       padding: 10px 20px 10px 20px;
       @include border-radius(35px);
@@ -31,10 +39,13 @@ header {
       border: none;
       color: white;
       font: $font-cta;
-      @include transition(font-size .2s);
+      //@include transition('width' .3s);
+      @include transition('width' .9s, 'border-radius' .3s);
 
       &:hover {
-        font-size: 40px;
+        //font-size: 40px;
+        width: 400px;
+        border-radius: 0;
       }
 
       &:focus {
