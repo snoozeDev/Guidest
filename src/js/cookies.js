@@ -18,9 +18,14 @@ gtag('config', 'UA-53104721-4');
 
 window.cookieconsent.initialise({
     container: document.getElementById("content"),
+    content: {
+        message:'Ce site web utilise des cookies.',
+        link: 'En savoir plus',
+        dismiss: 'Ok !'
+    },
     palette:{
         popup: {background: "#fff"},
-        button: {background: "#aa0000"},
+        button: {background: "#2BC016", text: "white"},
     },
     revokable:true,
     onStatusChange: function(status) {
