@@ -8,7 +8,7 @@
 // Video Load
 $('video#VideoWorker-0').ready(function(){
     // TODO: Page loader
-    console.log("I am ready !");
+    $('.loader-wrapper').hide();
 });
 
 $(document).ready(function () {
