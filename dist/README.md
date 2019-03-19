@@ -1,5 +1,7 @@
 # /dist
 
+[TOC]
+
 Deployment directory. Upload these files to WEB server for online deployment.
 
 ## Ideas

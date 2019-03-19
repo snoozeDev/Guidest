@@ -5,6 +5,11 @@
 // Date: 2019-03-05
 // Description: Main JS file
 // ===================================
+// Video Load
+$('video#VideoWorker-0').ready(function(){
+    // TODO: Page loader
+    console.log("I am ready !");
+});
 
 $(document).ready(function () {
     //AOS
