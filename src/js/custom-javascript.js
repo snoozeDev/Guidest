@@ -6,9 +6,14 @@
 // Description: Main JS file
 // ===================================
 // Video Load
+var loader = $('.loader-wrapper');
 $('video#VideoWorker-0').ready(function(){
-    // TODO: Page loader
-    $('.loader-wrapper').hide();
+    setTimeout(function () {
+        // TODO: Page loader
+        // console.log("Waited...");
+        loader.css('opacity', 0);
+        // loader.remove();
+    }, 2000);
 });
 
 $(document).ready(function () {

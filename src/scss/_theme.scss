@@ -11,13 +11,21 @@ body{
 // Loader
 // --------
 .loader-wrapper {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: white;
+  background-color: #43a047;
   z-index: 99;
+  overflow: hidden;
+  opacity: 1;
+  color: white;
+  @include transition(opacity 1s);
+
+  .flex-row{
+    min-height: 100%;
+  }
 }
 
 // --------
