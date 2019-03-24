@@ -6081,6 +6081,16 @@ header {
     min-height: 70px; }
   header #countdown {
     margin-top: 40px; }
+  header form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap; }
+  header .hidden {
+    display: none; }
   header .cta-btn button {
     width: auto;
     margin-top: 20px;

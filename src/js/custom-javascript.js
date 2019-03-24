@@ -18,6 +18,18 @@ vid.onloadeddata = function() {
 };
 
 $(document).ready(function () {
+    // Form
+    $(".cta-btn").click(function() {
+        var form = $("form");
+        form.slideDown(250);
+        // if form is visible
+        if (form.is(":visible")) {
+            // change .cta cursor to default
+            $(".cta").css('cursor', 'default');
+        }
+        $("#email").focus();
+    });
+
     //AOS
     AOS.init();
 
