@@ -6,15 +6,16 @@
 // Description: Main JS file
 // ===================================
 // Video Load
-var loader = $('.loader-wrapper');
-$('video#VideoWorker-0').ready(function(){
+var vid = document.getElementById("VideoWorker-0");
+vid.onloadeddata = function() {
+    var loader = $('.loader-wrapper');
     setTimeout(function () {
-        // TODO: Page loader
-        // console.log("Waited...");
         loader.css('opacity', 0);
-        // loader.remove();
-    }, 2000);
-});
+        setTimeout(function () {
+            loader.remove();
+        }, 1300);
+    }, 500);
+};
 
 $(document).ready(function () {
     //AOS
