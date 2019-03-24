@@ -1,15 +1,15 @@
-/*************
- * Main Theme
- *************/
+/*******************
+ * MAIN THEME
+ *******************/
 body{
   margin: 0;
   padding: 0;
   //font-family: $Montserrat;
 }
 
-// --------
-// Loader
-// --------
+/*************
+* Loader
+**************/
 .loader-wrapper {
   position: fixed;
   top: 0;
@@ -28,9 +28,9 @@ body{
   }
 }
 
-// --------
-// Header
-// --------
+/*************
+* Header
+**************/
 .header-wrapper{
   min-height: 100vh;
 }
@@ -46,22 +46,10 @@ header {
     min-height: 70px;
   }
 
-  #countdown {
-    margin-top: 40px;
-  }
-
-  form{
-    display: flex;
-    flex-flow: row nowrap;
-  }
-
-  .hidden{
-    display: none;
-  }
-
   .cta-btn {
     button {
-      width: auto;
+      cursor: pointer;
+      width: 250px;
       margin-top: 20px;
       padding: 10px 20px 10px 20px;
       @include border-radius(35px);
@@ -69,8 +57,7 @@ header {
       border: none;
       color: white;
       font: $font-cta;
-      //@include transition('width' .3s);
-      @include transition('width' .9s, 'border-radius' .3s);
+      @include transition('width' .5s, 'border-radius' .5s);
 
       &:hover {
         //font-size: 40px;
@@ -82,25 +69,31 @@ header {
         outline: none !important;
         font-size: 35px;
       }
+
+      @include media-breakpoint-down(sm) {
+        // TODO: Mobile style for cta
+      }
     }
+  }
+
+  form{
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  // Mark: Countdown
+  #countdown {
+    margin-top: 40px;
   }
 }
 
-
-
-//TODO: Change background img for mobile
-//@media (pointer: coarse) and (hover: none) {
-//  header {
-//    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-//  }
-//  header video {
-//    display: none;
-//  }
-//}
-
-// --------
-// Sections
-// --------
+/*************
+* Sections
+**************/
 
 .section-block {
   padding: 20px 0 20px 0;

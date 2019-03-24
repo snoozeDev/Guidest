@@ -4454,18 +4454,6 @@ vid.onloadeddata = function() {
 };
 
 $(document).ready(function () {
-    // Form
-    $(".cta-btn").click(function() {
-        var form = $("form");
-        form.slideDown(250);
-        // if form is visible
-        if (form.is(":visible")) {
-            // change .cta cursor to default
-            $(".cta").css('cursor', 'default');
-        }
-        $("#email").focus();
-    });
-
     //AOS
     AOS.init();
 
@@ -4491,4 +4479,18 @@ $(document).ready(function () {
             document.getElementById("countdown").innerHTML = "EXPIRED";
         }
     }, 1000);
+
+    // Form
+    var cta = $(".cta-btn button");
+    cta.click(function() {
+        var form = $("form");
+        form.slideDown(250);
+        cta.css('width', '400px');
+        cta.css('border-radius', '0px');
+
+        if (form.is(":visible")) {
+            cta.css('cursor', 'default');
+        }
+        $("#email").focus();
+    });
 });

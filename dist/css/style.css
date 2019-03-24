@@ -1,3 +1,9 @@
+/*******************
+ * MIXINS
+ *******************/
+/*******************
+ * FONTS
+ *******************/
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -6040,16 +6046,19 @@ a.text-dark:hover, a.text-dark:focus {
 * Custom CSS
 *
 ********************/
-/*************
- * Variables
- *************/
-/*************
- * Main Theme
- *************/
+/*******************
+ * VARIABLES
+ *******************/
+/*******************
+ * MAIN THEME
+ *******************/
 body {
   margin: 0;
   padding: 0; }
 
+/*************
+* Loader
+**************/
 .loader-wrapper {
   position: fixed;
   top: 0;
@@ -6070,6 +6079,9 @@ body {
   .loader-wrapper .flex-row {
     min-height: 100%; }
 
+/*************
+* Header
+**************/
 .header-wrapper {
   min-height: 100vh; }
 
@@ -6079,20 +6091,9 @@ header {
     color: white; }
   header #logo-wrapper {
     min-height: 70px; }
-  header #countdown {
-    margin-top: 40px; }
-  header form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap; }
-  header .hidden {
-    display: none; }
   header .cta-btn button {
-    width: auto;
+    cursor: pointer;
+    width: 250px;
     margin-top: 20px;
     padding: 10px 20px 10px 20px;
     border-radius: 35px;
@@ -6100,8 +6101,8 @@ header {
     border: none;
     color: white;
     font: 700 35px "Montserrat";
-    -webkit-transition: "width" 0.9s, "border-radius" 0.3s;
-    transition: "width" 0.9s, "border-radius" 0.3s; }
+    -webkit-transition: "width" 0.5s, "border-radius" 0.5s;
+    transition: "width" 0.5s, "border-radius" 0.5s; }
     @media (prefers-reduced-motion: reduce) {
       header .cta-btn button {
         -webkit-transition: none;
@@ -6112,10 +6113,28 @@ header {
     header .cta-btn button:focus {
       outline: none !important;
       font-size: 35px; }
+  header form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap; }
+  header .hidden {
+    display: none; }
+  header #countdown {
+    margin-top: 40px; }
 
+/*************
+* Sections
+**************/
 .section-block {
   padding: 20px 0 20px 0; }
 
+/*******************
+ * ANIMATIONS
+ *******************/
 .spinner {
   width: 40px;
   height: 40px;
@@ -6153,10 +6172,13 @@ header {
     -webkit-transform: scale(1); } }
 
 /*************
- * Fixes
+ * FIXES
  *************/
 div > a[title~='Hosted'] {
   display: none !important; }
 
+/*******************
+ * DEBUG
+ *******************/
 .boop {
   min-height: 1vh; }
