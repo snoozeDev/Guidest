@@ -4641,6 +4641,12 @@ header {
   header #countdown {
     margin-top: 40px; }
 
+.separator {
+  background-image: url("../img/wave.svg");
+  background-size: cover;
+  height: 68px;
+  min-width: 100%; }
+
 /*************
 * Sections
 **************/
