@@ -4642,16 +4642,17 @@ header {
     margin-top: 40px; }
 
 .separator {
-  background-image: url("../img/wave.svg");
-  background-size: cover;
   height: 68px;
   min-width: 100%; }
+  .separator svg {
+    min-width: 100%; }
 
 /*************
 * Sections
 **************/
 .section-block {
-  padding: 20px 0 20px 0; }
+  padding: 20px 0 20px 0;
+  background-color: white; }
 
 /*******************
  * ANIMATIONS

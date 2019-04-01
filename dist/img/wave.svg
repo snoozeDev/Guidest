@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1024px" height="68px" viewBox="0 0 1024 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1024px" height="100px" viewBox="0 0 1024 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
-    <title>Desktop</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M0,17 C61.4420669,28.3333333 146.7754,34 256,34 C419.8369,34 657.259191,9.81914988e-16 778,0 C858.493873,0 940.493873,11.3333333 1024,34 L1024,68 L397.794847,68 L0,68 L0,17 Z" id="Rectangle" fill="#FFFFFF"></path>
+    <title>Wave</title>
+    <desc>Wave</desc>
+    <defs>
+        <path d="M0,49 C61.4420669,60.3333333 146.7754,66 256,66 C419.8369,66 657.259191,32 778,32 C858.493873,32 940.493873,43.3333333 1024,66 L1024,100 L397.794847,100 L0,100 L0,49 Z" id="wave-path"></path>
+        <filter x="-1.5%" y="-22.1%" width="102.9%" height="144.1%" filterUnits="objectBoundingBox" id="shadow">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="wave" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rectangle">
+            <use fill="black" fill-opacity="1" filter="url(#shadow)" xlink:href="#wave-path"></use>
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#wave-path"></use>
+        </g>
     </g>
 </svg>
