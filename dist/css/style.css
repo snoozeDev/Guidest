@@ -4598,10 +4598,10 @@ body {
 * Header
 **************/
 .header-wrapper {
-  min-height: 90vh; }
+  min-height: 85vh; }
 
 header {
-  min-height: 90vh; }
+  min-height: 85vh; }
   header h1, header #countdown {
     color: white; }
   header #logo-wrapper {
@@ -4642,7 +4642,6 @@ header {
     margin-top: 40px; }
 
 .separator {
-  height: 68px;
   min-width: 100%; }
   .separator svg {
     min-width: 100%; }

@@ -32,11 +32,11 @@ body{
 * Header
 **************/
 .header-wrapper{
-  min-height: 90vh;
+  min-height: 85vh;
 }
 
 header {
-  min-height: 90vh;
+  min-height: 85vh;
 
   h1, #countdown {
     color: white;
@@ -94,7 +94,7 @@ header {
 .separator{
   //background-image: url("../img/wave.svg");
   //background-size: cover;
-  height: 68px;
+  //height: 68px;
   min-width: 100%;
   svg{
     min-width: 100%;
