@@ -23,7 +23,7 @@ $(document).ready(function () {
 
     // Video Parallax
     $('.jarallax').jarallax({
-        speed: 2.0
+        speed: 0.1
     });
 
     // Countdown timer
@@ -47,7 +47,7 @@ $(document).ready(function () {
     // Form
     var cta = $(".cta-btn button");
     cta.click(function() {
-        var form = $("form");
+        var form = $(".form-wrapper");
         form.slideDown(250);
         cta.css('width', '400px');
         cta.css('border-radius', '0px');
