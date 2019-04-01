@@ -4459,7 +4459,7 @@ $(document).ready(function () {
 
     // Video Parallax
     $('.jarallax').jarallax({
-        speed: 0.2
+        speed: 2.0
     });
 
     // Countdown timer
