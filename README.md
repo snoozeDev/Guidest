@@ -52,3 +52,5 @@
         │       ├──  [bootstrap sass source files]
         └── style.scss
 ```
+
+© 2019 Apache License
