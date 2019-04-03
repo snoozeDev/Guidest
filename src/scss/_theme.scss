@@ -29,6 +29,15 @@ body{
 }
 
 /*************
+* Navbar
+**************/
+nav{
+  .navbar-brand{
+    font: $logo-font;
+  }
+}
+
+/*************
 * Header
 **************/
 .header-wrapper{
