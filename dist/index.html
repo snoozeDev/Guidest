@@ -60,6 +60,32 @@
 
     <!--TODO : Change parallax to img on mobile-->
     <div class="jarallax" data-jarallax-video="webm:./img/voyages-corsaire-1080p.webm">
+
+        <!--MARK: Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--MARK: Header-->
         <header>
             <!--TODO : Link to strategy-->
             <!--<div id="link-wrapper" class="container">-->
@@ -97,8 +123,9 @@
                 </div>
             </div>
         </header>
-        <div class="d-flex flex-row">
-            <div class="separator">
+
+        <div class="d-flex flex-row separator">
+            <div class="separator-content">
                 <svg class="top-wave" preserveAspectRatio="none" height="100px" viewBox="0 0 1024 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
                     <title>Wave</title>
@@ -121,30 +148,31 @@
             </div>
         </div>
 
+        <!--MARK: Section 1-->
+        <section class="container-fluid section-block" id="block-1">
+            <div class="container">
+                <div class="d-flex flex-row">
+                    <h2 class="h1" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Try to win a visit to Saint-Malo for 2 people.</h2>
+                </div>
 
-    <section class="container-fluid section-block" id="block-1">
-        <div class="container">
-            <div class="d-flex flex-row">
-                <h2 class="h1" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Try to win a visit to Saint-Malo for 2 people.</h2>
-            </div>
+                <div class="d-flex flex-row">
+                    <div class="flex-col">
+                        <p data-aos="fade-up" data-aos-anchor-placement="top">With Voyages Corsaire, découvrez le monde comme vous ne l'avez jamais imaginé : dépassez vos limites et (re)trouvez votre équilibre.
+                            Votre loyauté nous est chère et votre avis compte pour nous.<br>
+                            Gagnez une visite guidée de Saint Malo élaborée par un guide originaire de la région.
+                        </p>
 
-            <div class="d-flex flex-row">
-                <div class="flex-col">
-                    <p data-aos="fade-up" data-aos-anchor-placement="top">With Voyages Corsaire, découvrez le monde comme vous ne l'avez jamais imaginé : dépassez vos limites et (re)trouvez votre équilibre.
-                        Votre loyauté nous est chère et votre avis compte pour nous.<br>
-                        Gagnez une visite guidée de Saint Malo élaborée par un guide originaire de la région.
-                    </p>
-
-                    <p data-aos="fade-up" data-aos-anchor-placement="top">
-                        Pour participer c’est simple, renseignez votre adresse mail et répondez au questionnaire, puis croisez les doigts le plus fort possible ! *
-                    </p>
+                        <p data-aos="fade-up" data-aos-anchor-placement="top">
+                            Pour participer c’est simple, renseignez votre adresse mail et répondez au questionnaire, puis croisez les doigts le plus fort possible ! *
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     </div>
+
+    <!--MARK: Scripts-->
     <!--jQuery-->
-    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Jarallax -->
     <script src="https://unpkg.com/jarallax@1.10/dist/jarallax.min.js"></script>
