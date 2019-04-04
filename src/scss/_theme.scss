@@ -7,6 +7,18 @@ body{
   //font-family: $Montserrat;
 }
 
+.overlay{
+  background-color: rgba(0,0,0,0.4);
+}
+
+h1, h2, .h1{
+  font-weight: 700;
+}
+
+p{
+  color: white;
+}
+
 /*************
 * Loader
 **************/
@@ -34,6 +46,11 @@ body{
 nav{
   .navbar-brand{
     font: $logo-font;
+    max-width: 10rem;
+
+    img{
+      width: 100%;
+    }
   }
 }
 
@@ -100,10 +117,18 @@ header {
   }
 }
 
-.separator-content{
-  min-width: 100%;
-  svg{
+/*************
+* Separators
+**************/
+.separator{
+  .separator-content{
     min-width: 100%;
+    svg{
+      min-width: 100%;
+    }
+    @include media-breakpoint-down(md){
+      overflow: hidden;
+    }
   }
 }
 
@@ -113,5 +138,8 @@ header {
 
 .section-block {
   padding: 20px 0 20px 0;
-  background-color: white;
+  background: #155799;
+  background: -webkit-linear-gradient(#155799, #159957);
+  background: linear-gradient(#155799, #159957);
+  color: white;
 }

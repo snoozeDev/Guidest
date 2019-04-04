@@ -5057,6 +5057,15 @@ body {
   margin: 0;
   padding: 0; }
 
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4); }
+
+h1, h2, .h1 {
+  font-weight: 700; }
+
+p {
+  color: white; }
+
 /*************
 * Loader
 **************/
@@ -5084,7 +5093,10 @@ body {
 * Navbar
 **************/
 nav .navbar-brand {
-  font: 700 1.25rem "Montserrat"; }
+  font: 700 1.25rem "Montserrat";
+  max-width: 10rem; }
+  nav .navbar-brand img {
+    width: 100%; }
 
 /*************
 * Header
@@ -5133,17 +5145,26 @@ header {
   header #countdown {
     margin-top: 40px; }
 
-.separator-content {
+/*************
+* Separators
+**************/
+.separator .separator-content {
   min-width: 100%; }
-  .separator-content svg {
+  .separator .separator-content svg {
     min-width: 100%; }
+  @media (max-width: 991.98px) {
+    .separator .separator-content {
+      overflow: hidden; } }
 
 /*************
 * Sections
 **************/
 .section-block {
   padding: 20px 0 20px 0;
-  background-color: white; }
+  background: #155799;
+  background: -webkit-gradient(linear, left top, left bottom, from(#155799), to(#159957));
+  background: linear-gradient(#155799, #159957);
+  color: white; }
 
 /*******************
  * ANIMATIONS

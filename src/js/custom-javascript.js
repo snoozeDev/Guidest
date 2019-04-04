@@ -22,8 +22,15 @@ $(document).ready(function () {
     AOS.init();
 
     // Video Parallax
-    $('.jarallax').jarallax({
+    var jrlx = $('.jarallax');
+    jrlx.jarallax({
         speed: 0.1
+    });
+
+    jarallax(jrlx, {
+        disableVideo: function () {
+            return /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
+        }
     });
 
     // Countdown timer
