@@ -5076,7 +5076,7 @@ p {
   left: 0;
   right: 0;
   background-color: #43a047;
-  z-index: 99;
+  z-index: 1035;
   overflow: hidden;
   opacity: 1;
   color: white;
@@ -5094,6 +5094,7 @@ p {
 **************/
 nav .navbar-brand {
   font: 700 1.25rem "Montserrat";
+  width: 100%;
   max-width: 10rem; }
   nav .navbar-brand img {
     width: 100%; }
