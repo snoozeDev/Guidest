@@ -5145,6 +5145,16 @@ header {
     display: none; }
   header #countdown {
     margin-top: 40px; }
+  header .social-media img {
+    max-width: 3rem;
+    -webkit-transition: "all" 0.2s;
+    transition: "all" 0.2s; }
+    @media (prefers-reduced-motion: reduce) {
+      header .social-media img {
+        -webkit-transition: none;
+        transition: none; } }
+    header .social-media img:hover {
+      max-width: 4rem; }
 
 /*************
 * Separators

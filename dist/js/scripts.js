@@ -4441,6 +4441,16 @@
 // Date: 2019-03-05
 // Description: Main JS file
 // ===================================
+
+// Social Media Popup
+function popup(url){
+    var popUpWindow = window.open(
+        url,
+        '',
+        'height=450,width=550,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no,status=yes'
+    );
+}
+
 // Video Load
 var vid = document.getElementById("VideoWorker-0");
 vid.onloadeddata = function() {
@@ -4470,7 +4480,7 @@ $(document).ready(function () {
     });
 
     // Countdown timer
-    var countDownDate = new Date("Apr 18, 2019 12:00:00").getTime();
+    var countDownDate = new Date("Apr 18, 2019 17:00:00").getTime();
     var x = setInterval(function () {
         var now = new Date().getTime();
         var distance = countDownDate - now;

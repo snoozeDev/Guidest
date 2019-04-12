@@ -46,6 +46,7 @@ gulp.task( 'scripts', async function() {
         paths.dev + '/js/custom-javascript.js'
     ];
     var cookieconsent = paths.dev + '/js/cookies.js';
+    var fb = paths.dev + '/js/FB_config.js';
     gulp.src( scripts )
         .pipe( concat( 'scripts.min.js' ) )
         .pipe( uglify() )
@@ -57,6 +58,11 @@ gulp.task( 'scripts', async function() {
 
     gulp.src( cookieconsent )
         .pipe( concat( 'cookies.min.js' ) )
+        .pipe( uglify() )
+        .pipe( gulp.dest( paths.js ) );
+
+    gulp.src( fb )
+        .pipe( concat( 'FB_config.min.js' ) )
         .pipe( uglify() )
         .pipe( gulp.dest( paths.js ) );
 

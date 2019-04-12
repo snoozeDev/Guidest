@@ -35,5 +35,5 @@ window.cookieconsent.initialise({
     law: {
         regionalLaw: false,
     },
-    location: true,
+    location: false
 });

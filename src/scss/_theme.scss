@@ -116,6 +116,18 @@ header {
   #countdown {
     margin-top: 40px;
   }
+
+  //Mark: Social Media Buttons
+  .social-media{
+    img{
+      max-width: 3rem;
+      @include transition('all' .2s);
+
+      &:hover{
+        max-width: 4rem;
+      }
+    }
+  }
 }
 
 /*************

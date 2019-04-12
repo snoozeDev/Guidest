@@ -46,6 +46,10 @@
 </head>
 
 <body>
+    <!--MARK: FB Scripts-->
+    <script src="./js/FB_config.min.js"></script>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+
     <!--MARK: Loader-->
     <div class="loader-wrapper">
             <div class="d-flex flex-row justify-content-center">
@@ -65,7 +69,7 @@
 
         <!--MARK: Navbar-->
         <!--TODO : Link to strategy-->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <nav class="navbar navbar-expand-lg overlay navbar-dark">
             <a class="navbar-brand" href="#">
                 <img src="img/Logo/Guidest-gradient.svg" alt="Guidest">
             </a>
@@ -75,11 +79,8 @@
         <header class="overlay">
             <div class="container header-wrapper d-flex justify-content-center">
                 <div class="align-self-center">
-                    <!--<div id="logo-wrapper" class="d-flex flex-row justify-content-center">-->
-                        <!--<p class="h1">LOGO</p>-->
-                    <!--</div>-->
 
-                    <div class="d-flex flex-row text-center">
+                    <div class="d-flex flex-row text-center justify-content-center">
                         <div class="flex-col tag-content justify-content-center">
                             <div class="flex-row">
                                 <h1>Win a visit to Saint-Malo for 2 people !</h1>
@@ -99,9 +100,18 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="d-flex flex-row justify-content-center">
                         <p><strong><span id="countdown"></span></strong> left on this amazing deal !</p>
+                    </div>
+                    <div class="social-media d-flex flex-row justify-content-center">
+                        <div class=" twitter col-md-2 text-center">
+                            <img src="img/Twitter_logo.svg" alt="">
+                        </div>
+                        <div class="facebook col-md-2 text-center">
+                            <a onclick="popup('https://www.facebook.com/sharer/sharer.php?u=https://voyages-corsaire.000webhostapp.com&t=Guidest')">
+                                <img src="img/FB_logo.svg" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
