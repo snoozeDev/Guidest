@@ -9,10 +9,10 @@ php_value display_errors 1
 
 # Static assets - 1 yr
 <filesMatch ".(jpg|jpeg|png|gif|ico|mp4)$">
-Header set Cache-Control "max-age=31557600, public"
+    Header set Cache-Control "max-age=31557600, public"
 </filesMatch>
 
 # Dynamic assets - 1 month
 <filesMatch ".(css|js|svg|ttf|webm)$">
-Header set Cache-Control "must-revalidate, max-age=2628000, public"
+    Header set Cache-Control "must-revalidate, max-age=2628000, public"
 </filesMatch>
