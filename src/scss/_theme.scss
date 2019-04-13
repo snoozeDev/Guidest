@@ -185,10 +185,19 @@ header {
 
       img{
         max-width: 35%;
+
+        @include media-breakpoint-down(md){
+          max-width: 30%;
+          margin-bottom: 15px;
+        }
       }
 
       .full-width{
         max-width: 100%;
+
+        @include media-breakpoint-down(md){
+          max-width: 70%;
+        }
       }
     }
   }
