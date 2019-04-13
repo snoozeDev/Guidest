@@ -5114,7 +5114,7 @@ header {
   header .cta-btn button {
     cursor: pointer;
     width: 250px;
-    margin: 20px 0 25px 0;
+    margin: 20px 0 0 0;
     padding: 10px 20px 10px 20px;
     border-radius: 35px;
     background-color: #28a745;
@@ -5133,7 +5133,7 @@ header {
     header .cta-btn button:focus {
       outline: none !important;
       font-size: 35px; }
-  header form {
+  header .form-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5141,10 +5141,14 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap; }
+    header .form-wrapper form {
+      max-width: 400px; }
   header .hidden {
     display: none; }
-  header #countdown {
-    margin-top: 40px; }
+  header .timer {
+    margin-top: 25px; }
+    header .timer #countdown {
+      margin-top: 40px; }
   header .social-media img {
     max-width: 3rem;
     -webkit-transition: "all" 0.2s;
