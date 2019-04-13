@@ -16,4 +16,4 @@ After cloning repository:
 2. **COPY** `/src/fonts` content to `/dist/`
 3. Run `gulp watch` in Terminal from root directory
 
-© 2019 Apache License
+© SnoozeDev 2019 AGPL-3.0
