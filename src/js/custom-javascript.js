@@ -74,4 +74,42 @@ $(document).ready(function () {
         }
         $("#email").focus();
     });
+
+    //Social Media
+    // - FB
+    $(".facebook>a").click(function(){
+        FB.ui({
+            method: 'share',
+            href: 'https://voyages-corsaire.000webhostapp.com/',
+            display: 'popup',
+            // hashtag: 'guidest',
+            // quote: 'yay working !'
+        }, function (response) {});
+    });
+    // - TWITTER
+    var getWindowOptions = function() {
+        var width = 500;
+        var height = 350;
+        var left = (window.innerWidth / 2) - (width / 2);
+        var top = (window.innerHeight / 2) - (height / 2);
+
+        return [
+            'resizable,scrollbars,status',
+            'height=' + height,
+            'width=' + width,
+            'left=' + left,
+            'top=' + top,
+        ].join();
+    };
+    var twitterBtn = document.querySelector('.twitter');
+    var text = encodeURIComponent('Hey everyone, come & see how good I look!');
+    var shareUrl = 'https://twitter.com/intent/tweet?url=' + location.href + '&text=' + text;
+    twitterBtn.href = shareUrl; // 1
+
+    twitterBtn.addEventListener('click', function(e) {
+        console.log('click');
+        e.preventDefault();
+        var win = window.open(shareUrl, 'ShareOnTwitter', getWindowOptions());
+        win.opener = null; // 2
+    });
 });
