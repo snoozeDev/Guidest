@@ -5194,6 +5194,12 @@ header {
 .section-block#block-2 {
   color: black; }
 
+/*************
+* Mark: Footer
+**************/
+footer {
+  background-color: #c0c0c0; }
+
 /*******************
  * ANIMATIONS
  *******************/
