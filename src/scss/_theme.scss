@@ -16,7 +16,7 @@ h1, h2, .h1{
 }
 
 /*************
-* Loader
+* Mark: Loader
 **************/
 .loader-wrapper {
   position: fixed;
@@ -37,7 +37,7 @@ h1, h2, .h1{
 }
 
 /*************
-* Navbar
+* Mark: Navbar
 **************/
 nav{
   .navbar-brand{
@@ -52,7 +52,7 @@ nav{
 }
 
 /*************
-* Header
+* Mark: Header
 **************/
 .header-wrapper{
   min-height: 85vh;
@@ -73,6 +73,7 @@ header {
     min-height: 70px;
   }
 
+  // Mark: --CTA
   .cta-btn {
     button {
       cursor: pointer;
@@ -103,6 +104,7 @@ header {
     }
   }
 
+  // Mark: --Form
   .form-wrapper{
     display: flex;
     flex-flow: row nowrap;
@@ -116,7 +118,7 @@ header {
     display: none;
   }
 
-  // Mark: Countdown
+  // Mark: --Countdown
   .timer{
     margin-top: 25px;
 
@@ -125,7 +127,7 @@ header {
     }
   }
 
-  //Mark: Social Media Buttons
+  //Mark: --Social Media Buttons
   .social-media{
     img{
       max-width: 3rem;
@@ -139,7 +141,7 @@ header {
 }
 
 /*************
-* Separators
+* Mark: Separators
 **************/
 .separator{
   .separator-content{
@@ -154,7 +156,7 @@ header {
 }
 
 /*************
-* Sections
+* Mark: Sections
 **************/
 
 .section-block{
