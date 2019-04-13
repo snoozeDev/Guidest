@@ -169,7 +169,21 @@ header {
    }
 
   &#block-2{
-    color: black;
+    .title{
+      color: #2F80ED;
+
+      >h2{
+        text-shadow: 0 0 3px rgba(0,0,0,0.3);
+      }
+    }
+
+    .partner-logos{
+      margin: 30px 0 30px 0;
+
+      img{
+        max-width: 30%;
+      }
+    }
   }
 }
 
@@ -178,5 +192,21 @@ header {
 **************/
 
 footer{
-  background-color: #c0c0c0;
+  color: white;
+  padding-top: 1rem;
+  //background-color: #c0c0c0;
+  background-image: linear-gradient(to bottom right, #2F80ED, #56ccf2);
+
+  a {
+    color: white;
+    font-weight: 600;
+
+    &:hover{
+      color: black;
+    }
+  }
+
+  .disclaimer{
+    font-size: 10px;
+  }
 }
