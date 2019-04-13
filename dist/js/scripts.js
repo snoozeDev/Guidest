@@ -4512,15 +4512,10 @@ $(document).ready(function () {
     });
 
     //Social Media
+    // TODO: Social media window size
     // - FB
     $(".facebook>a").click(function(){
-        FB.ui({
-            method: 'share',
-            href: 'https://voyages-corsaire.000webhostapp.com/',
-            display: 'popup',
-            // hashtag: 'guidest',
-            // quote: 'yay working !'
-        }, function (response) {});
+        window.open("https://www.facebook.com/sharer/sharer.php?u="+window.location.href+"&t="+document.title, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=300');
     });
     // - TWITTER
     var getWindowOptions = function() {
