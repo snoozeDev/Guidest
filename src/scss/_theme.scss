@@ -131,10 +131,13 @@ header {
   .social-media{
     img{
       max-width: 3rem;
+      margin: 1rem;
       @include transition('all' .2s);
 
       &:hover{
         max-width: 4rem;
+        margin: 0;
+        transform: translateY(.5rem);
       }
     }
   }

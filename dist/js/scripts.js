@@ -4538,8 +4538,8 @@ $(document).ready(function () {
         ].join();
     };
     var twitterBtn = document.querySelector('.twitter');
-    var text = encodeURIComponent('Hey everyone, come & see how good I look!');
-    var shareUrl = 'https://twitter.com/intent/tweet?url=' + location.href + '&text=' + text;
+    var text = encodeURIComponent('Go and check out this contest to win a free tour of Saint Malo ! #guidest');
+    var shareUrl = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent("https://voyages-corsaire.000webhostapp.com/") + '&text=' + text;
     twitterBtn.href = shareUrl; // 1
 
     twitterBtn.addEventListener('click', function(e) {
