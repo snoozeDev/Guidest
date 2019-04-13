@@ -212,6 +212,11 @@ footer{
   padding-top: 1rem;
   //background-color: #c0c0c0;
   background-image: linear-gradient(to bottom right, #2F80ED, #56ccf2);
+  @include box-shadows(0 3px 10px rgba(0,0,0,0.5));
+  //-webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+  //-moz-box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+  //-o-box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+  //box-shadow: 0 3px 10px rgba(0,0,0,0.5);
 
   a {
     color: white;

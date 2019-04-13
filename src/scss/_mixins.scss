@@ -123,3 +123,13 @@
   -webkit-transition-delay: $delay;
   transition-delay:         $delay;
 }
+
+// =============================================================================
+// Box Shadow
+// =============================================================================
+@mixin box-shadows($shadow...){
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  -o-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
