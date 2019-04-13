@@ -5075,7 +5075,7 @@ h1, h2, .h1 {
   font-weight: 700; }
 
 /*************
-* Loader
+* Mark: Loader
 **************/
 .loader-wrapper {
   position: fixed;
@@ -5098,7 +5098,7 @@ h1, h2, .h1 {
     min-height: 100%; }
 
 /*************
-* Navbar
+* Mark: Navbar
 **************/
 nav .navbar-brand {
   font: 700 1.25rem "Montserrat";
@@ -5108,7 +5108,7 @@ nav .navbar-brand {
     width: 100%; }
 
 /*************
-* Header
+* Mark: Header
 **************/
 .header-wrapper {
   min-height: 85vh; }
@@ -5171,7 +5171,7 @@ header {
       max-width: 4rem; }
 
 /*************
-* Separators
+* Mark: Separators
 **************/
 .separator .separator-content {
   min-width: 100%; }
@@ -5182,7 +5182,7 @@ header {
       overflow: hidden; } }
 
 /*************
-* Sections
+* Mark: Sections
 **************/
 .section-block#block-1 {
   padding: 20px 0 20px 0;
