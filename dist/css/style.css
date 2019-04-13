@@ -5218,9 +5218,3 @@ footer {
  *************/
 div > a[title~='Hosted'] {
   display: none !important; }
-
-/*******************
- * DEBUG
- *******************/
-.boop {
-  min-height: 1vh; }
