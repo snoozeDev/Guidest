@@ -67,20 +67,6 @@
   font-weight: 900;
   src: url("../fonts/Montserrat/Montserrat-Black.ttf") format("truetype"); }
 
-@font-face {
-  font-family: "Futura";
-  font-display: swap;
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/Futura/Futura-Bold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Futura";
-  font-display: swap;
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/Futura/Futura-Medium.ttf") format("truetype"); }
-
 /*******************
 *
 * Bootstrap4
