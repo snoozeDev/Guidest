@@ -82,6 +82,7 @@
 
   @font-face {
     font-family: quote($name);
+    font-display: swap;
     font-style: $style;
     font-weight: $weight;
     src: $src;
