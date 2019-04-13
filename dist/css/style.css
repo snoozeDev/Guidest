@@ -5074,9 +5074,6 @@ body {
 h1, h2, .h1 {
   font-weight: 700; }
 
-p {
-  color: white; }
-
 /*************
 * Loader
 **************/
@@ -5118,6 +5115,8 @@ nav .navbar-brand {
 
 header {
   min-height: 85vh; }
+  header p {
+    color: white; }
   header h1, header #countdown {
     color: white; }
   header #logo-wrapper {
@@ -5185,12 +5184,15 @@ header {
 /*************
 * Sections
 **************/
-.section-block {
+.section-block#block-1 {
   padding: 20px 0 20px 0;
   background: #155799;
   background: -webkit-gradient(linear, left top, left bottom, from(#56ccf2), to(#2f80ed));
   background: linear-gradient(#56ccf2, #2f80ed);
   color: white; }
+
+.section-block#block-2 {
+  color: black; }
 
 /*******************
  * ANIMATIONS

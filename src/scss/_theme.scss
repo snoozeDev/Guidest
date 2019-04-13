@@ -15,10 +15,6 @@ h1, h2, .h1{
   font-weight: 700;
 }
 
-p{
-  color: white;
-}
-
 /*************
 * Loader
 **************/
@@ -64,6 +60,10 @@ nav{
 
 header {
   min-height: 85vh;
+
+  p{
+    color: white;
+  }
 
   h1, #countdown {
     color: white;
@@ -157,10 +157,16 @@ header {
 * Sections
 **************/
 
-.section-block {
-  padding: 20px 0 20px 0;
-  background: #155799;
-  background: -webkit-linear-gradient(#56ccf2, #2f80ed);
-  background: linear-gradient(#56ccf2, #2f80ed);
-  color: white;
+.section-block{
+  &#block-1 {
+     padding: 20px 0 20px 0;
+     background: #155799;
+     background: -webkit-linear-gradient(#56ccf2, #2f80ed);
+     background: linear-gradient(#56ccf2, #2f80ed);
+     color: white;
+   }
+
+  &#block-2{
+    color: black;
+  }
 }
