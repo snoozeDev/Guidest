@@ -5073,40 +5073,32 @@ header {
     color: white; }
   header #logo-wrapper {
     min-height: 70px; }
-  header .cta-btn button {
-    cursor: pointer;
-    width: 250px;
+  header .cta .cta-wrapper {
     margin: 20px 0 0 0;
     padding: 10px 20px 10px 20px;
-    border-radius: 35px;
     background: #56ccf2;
     background: -webkit-gradient(linear, left top, right bottom, from(#56ccf2), to(#2f80ed));
     background: linear-gradient(to bottom right, #56ccf2, #2f80ed);
-    border: none;
-    color: white;
-    font: 700 35px "Montserrat";
+    border-radius: 35px;
     -webkit-transition: "width" 0.5s, "border-radius" 0.5s;
-    transition: "width" 0.5s, "border-radius" 0.5s; }
+    transition: "width" 0.5s, "border-radius" 0.5s;
+    width: 80%; }
     @media (prefers-reduced-motion: reduce) {
-      header .cta-btn button {
+      header .cta .cta-wrapper {
         -webkit-transition: none;
         transition: none; } }
-    header .cta-btn button:hover {
-      width: 400px;
-      border-radius: 0; }
-    header .cta-btn button:focus {
-      outline: none !important;
-      font-size: 35px; }
+    header .cta .cta-wrapper button {
+      color: white;
+      font: 700 35px "Montserrat";
+      border: none;
+      background: none; }
+    header .cta .cta-wrapper:hover {
+      width: 100%;
+      border-radius: 0;
+      cursor: pointer; }
   header .form-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap; }
-    header .form-wrapper form {
-      max-width: 400px; }
+    margin-top: 2rem;
+    margin-bottom: 1rem; }
   header .hidden {
     display: none; }
   header .timer {

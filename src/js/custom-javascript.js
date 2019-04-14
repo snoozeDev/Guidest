@@ -15,7 +15,7 @@ function popup(url){
     );
 }
 
-// Video Load
+// Page Loader
 var vid = document.getElementById("VideoWorker-0");
 vid.onloadeddata = function() {
     var loader = $('.loader-wrapper');
@@ -62,17 +62,16 @@ $(document).ready(function () {
     }, 1000);
 
     // Form
-    var cta = $(".cta-btn button");
-    cta.click(function() {
-        var form = $(".form-wrapper");
-        form.slideDown(250);
-        cta.css('width', '400px');
-        cta.css('border-radius', '0px');
-
-        if (form.is(":visible")) {
-            cta.css('cursor', 'default');
-        }
-        $("#email").focus();
+    var cta = $(".cta-wrapper");
+    var form = $(".form-wrapper");
+    cta.click(function () {
+        cta.css("width", "100%");
+        cta.css("border-radius", "0");
+        form.slideDown();
+        setTimeout(function () {
+            form.removeClass("hidden");
+            $("#email").focus();
+        }, 400);
     });
 
     //Social Media

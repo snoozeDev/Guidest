@@ -74,45 +74,46 @@ header {
   }
 
   // Mark: --CTA
-  .cta-btn {
-    button {
-      cursor: pointer;
-      width: 250px;
+  .cta {
+    .cta-wrapper {
       margin: 20px 0 0 0;
       padding: 10px 20px 10px 20px;
-      @include border-radius(35px);
       background: #56ccf2;
       background: linear-gradient(to bottom right, #56ccf2, #2f80ed);
-      border: none;
-      color: white;
-      font: $font-cta;
+      @include border-radius(35px);
       @include transition('width' .5s, 'border-radius' .5s);
+      width: 80%;
+
+      button {
+        color: white;
+        font: $font-cta;
+        border: none;
+        background: none;
+      }
 
       &:hover {
-        //font-size: 40px;
-        width: 400px;
+        width: 100%;
         border-radius: 0;
-      }
-
-      &:focus {
-        outline: none !important;
-        font-size: 35px;
-      }
-
-      @include media-breakpoint-down(sm) {
-        // TODO: Mobile style for cta
+        cursor: pointer;
       }
     }
   }
 
+  //    &:focus {
+  //      outline: none !important;
+  //      font-size: 35px;
+  //    }
+  //
+  //    @include media-breakpoint-down(sm) {
+  //      // TODO: Mobile style for cta
+  //    }
+  //  }
+  //}
+
   // Mark: --Form
   .form-wrapper{
-    display: flex;
-    flex-flow: row nowrap;
-
-    form{
-      max-width: 400px;
-    }
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 
   .hidden{
