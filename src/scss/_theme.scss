@@ -24,8 +24,8 @@ h1, h2, .h1{
   bottom: 0;
   left: 0;
   right: 0;
-  background: #2f80ed;
-  background: linear-gradient(#56ccf2, #2f80ed);
+  background: $blue;
+  background: linear-gradient($light-blue, $blue);
   z-index: 1035;
   overflow: hidden;
   opacity: 1;
@@ -78,8 +78,8 @@ header {
     .cta-wrapper {
       margin: 20px 0 0 0;
       padding: 10px 20px 10px 20px;
-      background: #56ccf2;
-      background: linear-gradient(to bottom right, #56ccf2, #2f80ed);
+      background: $light-blue;
+      background: linear-gradient(to bottom right, $light-blue, $blue);
       @include border-radius(35px);
       @include transition('width' .5s, 'border-radius' .5s);
       width: 80%;
@@ -126,6 +126,9 @@ header {
 
     #countdown {
       margin-top: 40px;
+      font-weight: 700;
+      font-size: 35px;
+      color: $light-blue;
     }
   }
 
@@ -167,8 +170,8 @@ header {
 .section-block{
   &#block-1 {
     padding: 20px 0 20px 0;
-    background: #2f80ed;
-    background: linear-gradient(#56ccf2, #2f80ed);
+    background: $blue;
+    background: linear-gradient($light-blue, $blue);
     color: white;
 
     .title{
@@ -181,7 +184,7 @@ header {
 
   &#block-2{
     .title{
-      color: #2F80ED;
+      color: $blue;
 
       >h2{
         text-shadow: 0 0 3px rgba(0,0,0,0.3);
@@ -219,7 +222,7 @@ header {
 footer{
   color: white;
   padding-top: 1rem;
-  background-image: linear-gradient(to bottom right, #2F80ED, #56ccf2);
+  background-image: linear-gradient(to bottom right, $blue, $light-blue);
   @include box-shadows(0 3px 10px rgba(0,0,0,0.5));
 
   a {
