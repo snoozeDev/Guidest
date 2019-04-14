@@ -24,8 +24,8 @@ h1, h2, .h1{
   bottom: 0;
   left: 0;
   right: 0;
-  background: $blue;
-  background: linear-gradient($light-blue, $blue);
+  background: $dark-blue;
+  background: linear-gradient($light-blue, $dark-blue);
   z-index: 1035;
   overflow: hidden;
   opacity: 1;
@@ -79,7 +79,7 @@ header {
       margin: 20px 0 0 0;
       padding: 10px 20px 10px 20px;
       background: $light-blue;
-      background: linear-gradient(to bottom right, $light-blue, $blue);
+      background: linear-gradient(to bottom right, $light-blue, $dark-blue);
       @include border-radius(35px);
       @include transition('max-width' .5s, 'border-radius' .5s);
       max-width: 80%;
@@ -125,6 +125,32 @@ header {
       display: none;
       overflow: hidden;
       @include transition("all" .2s);
+    }
+
+    form{
+      .row{
+        .input-wrapper{
+          >input{
+            border: none;
+            padding: 5px 10px 5px 10px;
+            margin:  0 0 1rem 0;
+          }
+        }
+        input[type="submit"]{
+          @include border-radius(2rem);
+          border: none;
+          background: white;
+          font-weight: 600;
+          padding: 10px 20px 10px 20px;
+          color: $dark-blue;
+          @include transition("all", .1s);
+
+          &:hover{
+            color: white;
+            background: $dark-blue;
+          }
+        }
+      }
     }
   }
 
@@ -179,8 +205,8 @@ header {
 .section-block{
   &#block-1 {
     padding: 20px 0 20px 0;
-    background: $blue;
-    background: linear-gradient($light-blue, $blue);
+    background: $dark-blue;
+    background: linear-gradient($light-blue, $dark-blue);
     color: white;
 
     .title{
@@ -193,7 +219,7 @@ header {
 
   &#block-2{
     .title{
-      color: $blue;
+      color: $dark-blue;
 
       >h2{
         text-shadow: 0 0 3px rgba(0,0,0,0.3);
@@ -231,7 +257,7 @@ header {
 footer{
   color: white;
   padding-top: 1rem;
-  background-image: linear-gradient(to bottom right, $blue, $light-blue);
+  background-image: linear-gradient(to bottom right, $dark-blue, $light-blue);
   @include box-shadows(0 3px 10px rgba(0,0,0,0.5));
 
   a {

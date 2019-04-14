@@ -73,7 +73,7 @@ $(document).ready(function () {
         // form.css("margin-top", "10rem");
         form.animate({
             height: h
-        }, 700, "linear");
+        }, 500, "linear");
         setTimeout(function () {
             $("#email").focus();
         }, 800);

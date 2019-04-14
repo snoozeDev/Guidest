@@ -5120,6 +5120,26 @@ header {
         header .form-wrapper.hidden {
           -webkit-transition: none;
           transition: none; } }
+    header .form-wrapper form .row .input-wrapper > input {
+      border: none;
+      padding: 5px 10px 5px 10px;
+      margin: 0 0 1rem 0; }
+    header .form-wrapper form .row input[type="submit"] {
+      border-radius: 2rem;
+      border: none;
+      background: white;
+      font-weight: 600;
+      padding: 10px 20px 10px 20px;
+      color: #007bff;
+      -webkit-transition: "all", 0.1s;
+      transition: "all", 0.1s; }
+      @media (prefers-reduced-motion: reduce) {
+        header .form-wrapper form .row input[type="submit"] {
+          -webkit-transition: none;
+          transition: none; } }
+      header .form-wrapper form .row input[type="submit"]:hover {
+        color: white;
+        background: #007bff; }
   header .timer {
     margin-top: 25px; }
     header .timer #countdown {
