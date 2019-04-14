@@ -166,25 +166,40 @@
         <!--MARK: Section 1-->
         <section class="container-fluid section-block" id="block-1">
             <div class="container">
-                <div class="title d-flex flex-row">
-                    <h2 class="h1" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Best Guides, Best Destinations</h2>
+                <div class="tab-wrapper row">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="content d-flex flex-row">
-                    <div class="flex-col">
-                        <p data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-                            With Guidest, discover the world like you've never seen it before ! Our amazing certified guides will show you wonders that you never thought could exist.
-                        </p>
-
-                        <p data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-                            We are organising a contest to celebrate our brand new destination: <strong>Saint-Malo</strong> !<br>
-                            Leave us your email address and get a chance to <strong>win a free 1-day tour</strong> of Saint-Malo by one of our best local guides, for you and a friend (or significant other &#128521).
-                        </p>
-
-                        <p data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-                            To enter the contest, all you need to do enter you email at the top of the page, answer the following survey and keep your finger crossed ! Easy !
-                        </p>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><div class="title d-flex flex-row">
+                        <h2 class="h1" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Best Guides, Best Destinations</h2>
                     </div>
+
+                        <div class="content d-flex flex-row">
+                            <div class="flex-col">
+                                <p data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                                    With Guidest, discover the world like you've never seen it before ! Our amazing certified guides will show you wonders that you never thought could exist.
+                                </p>
+
+                                <p data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                                    We are organising a contest to celebrate our brand new destination: <strong>Saint-Malo</strong> !<br>
+                                    Leave us your email address and get a chance to <strong>win a free 1-day tour</strong> of Saint-Malo by one of our best local guides, for you and a friend (or significant other &#128521).
+                                </p>
+
+                                <p data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                                    To enter the contest, all you need to do enter you email at the top of the page, answer the following survey and keep your finger crossed ! Easy !
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
                 </div>
             </div>
         </section>
