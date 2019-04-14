@@ -5118,6 +5118,7 @@ header {
         -webkit-transition: none;
         transition: none; } }
     header .social-media img:hover {
+      cursor: pointer;
       max-width: 4rem;
       margin: 0;
       -webkit-transform: translateY(0.5rem);

@@ -140,6 +140,7 @@ header {
       @include transition('all' .2s);
 
       &:hover{
+        cursor: pointer;
         max-width: 4rem;
         margin: 0;
         transform: translateY(.5rem);
