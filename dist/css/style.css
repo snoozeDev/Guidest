@@ -5183,7 +5183,27 @@ header {
   background: -webkit-gradient(linear, left top, left bottom, from(#56ccf2), to(#007bff));
   background: linear-gradient(#56ccf2, #007bff);
   color: white; }
-  .section-block#block-1 .title > h2 {
+  .section-block#block-1 .tab-wrapper {
+    margin-bottom: 2rem; }
+    .section-block#block-1 .tab-wrapper .nav-tabs {
+      border: none; }
+      .section-block#block-1 .tab-wrapper .nav-tabs .nav-link {
+        color: white;
+        font-weight: 500; }
+        .section-block#block-1 .tab-wrapper .nav-tabs .nav-link.active {
+          border: white 1px;
+          color: #007bff !important; }
+        .section-block#block-1 .tab-wrapper .nav-tabs .nav-link#contest-tab {
+          border-top-left-radius: .5rem;
+          border-bottom-left-radius: .5rem;
+          border-top-right-radius: 0;
+          border: 1px solid white; }
+        .section-block#block-1 .tab-wrapper .nav-tabs .nav-link#strategy-tab {
+          border: 1px solid white;
+          border-top-right-radius: .5rem;
+          border-bottom-right-radius: .5rem;
+          border-top-left-radius: 0; }
+  .section-block#block-1 .tab-content #home .title > h2 {
     margin-bottom: 2rem; }
 
 .section-block#block-2 .title {

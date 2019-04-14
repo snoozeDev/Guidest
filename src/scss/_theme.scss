@@ -209,11 +209,49 @@ header {
     background: linear-gradient($light-blue, $dark-blue);
     color: white;
 
-    .title{
-      >h2{
-        margin-bottom: 2rem;
+    .tab-wrapper{
+      margin-bottom: 2rem;
+
+      .nav-tabs {
+        border: none;
+        .nav-link {
+          color: white;
+          font-weight: 500;
+
+          &.active{
+            border: white 1px;
+            color: $blue !important;
+          }
+
+          &#contest-tab{
+            border-top-left-radius: .5rem;
+            border-bottom-left-radius: .5rem;
+            border-top-right-radius: 0;
+            border: 1px solid white;
+          }
+
+          &#strategy-tab{
+            border: 1px solid white;
+            border-top-right-radius: .5rem;
+            border-bottom-right-radius: .5rem;
+            border-top-left-radius: 0;
+          }
+
+
+        }
       }
     }
+
+    .tab-content{
+      #home{
+        .title{
+          >h2{
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+
 
   }
 
