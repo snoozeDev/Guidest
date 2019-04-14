@@ -24,7 +24,8 @@ h1, h2, .h1{
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #43a047;
+  background: #2f80ed;
+  background: linear-gradient(#56ccf2, #2f80ed);
   z-index: 1035;
   overflow: hidden;
   opacity: 1;
@@ -80,7 +81,8 @@ header {
       margin: 20px 0 0 0;
       padding: 10px 20px 10px 20px;
       @include border-radius(35px);
-      background-color: $green;
+      background: #56ccf2;
+      background: linear-gradient(to bottom right, #56ccf2, #2f80ed);
       border: none;
       color: white;
       font: $font-cta;
@@ -164,8 +166,7 @@ header {
 .section-block{
   &#block-1 {
     padding: 20px 0 20px 0;
-    background: #155799;
-    background: -webkit-linear-gradient(#56ccf2, #2f80ed);
+    background: #2f80ed;
     background: linear-gradient(#56ccf2, #2f80ed);
     color: white;
 
@@ -217,13 +218,8 @@ header {
 footer{
   color: white;
   padding-top: 1rem;
-  //background-color: #c0c0c0;
   background-image: linear-gradient(to bottom right, #2F80ED, #56ccf2);
   @include box-shadows(0 3px 10px rgba(0,0,0,0.5));
-  //-webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.5);
-  //-moz-box-shadow: 0 3px 10px rgba(0,0,0,0.5);
-  //-o-box-shadow: 0 3px 10px rgba(0,0,0,0.5);
-  //box-shadow: 0 3px 10px rgba(0,0,0,0.5);
 
   a {
     color: white;
