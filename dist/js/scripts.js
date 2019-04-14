@@ -4506,9 +4506,10 @@ $(document).ready(function () {
         cta.css("border-radius", "0");
         cta.css("max-width", "100%");
         form.removeClass("hidden");
+        // form.css("margin-top", "10rem");
         form.animate({
             height: h
-        }, 700);
+        }, 700, "linear");
         setTimeout(function () {
             $("#email").focus();
         }, 800);

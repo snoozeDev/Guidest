@@ -5101,11 +5101,25 @@ header {
       border-radius: 0;
       cursor: pointer; }
   header .form-wrapper {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    overflow: hidden; }
-  header .hidden {
-    display: none; }
+    margin: 2rem 0 1rem 0;
+    height: inherit;
+    overflow: hidden;
+    -webkit-transition: "all" 0.2s;
+    transition: "all" 0.2s; }
+    @media (prefers-reduced-motion: reduce) {
+      header .form-wrapper {
+        -webkit-transition: none;
+        transition: none; } }
+    header .form-wrapper.hidden {
+      margin: 0;
+      display: none;
+      overflow: hidden;
+      -webkit-transition: "all" 0.2s;
+      transition: "all" 0.2s; }
+      @media (prefers-reduced-motion: reduce) {
+        header .form-wrapper.hidden {
+          -webkit-transition: none;
+          transition: none; } }
   header .timer {
     margin-top: 25px; }
     header .timer #countdown {
