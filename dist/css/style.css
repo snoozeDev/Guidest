@@ -5053,8 +5053,7 @@ h1, h2, .h1 {
 **************/
 nav .navbar-brand {
   font: 700 1.25rem "Montserrat";
-  width: 100%;
-  max-width: 10rem; }
+  max-width: 14rem; }
   nav .navbar-brand img {
     width: 100%; }
 
