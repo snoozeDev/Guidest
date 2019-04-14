@@ -81,10 +81,15 @@ header {
       background: $light-blue;
       background: linear-gradient(to bottom right, $light-blue, $blue);
       @include border-radius(35px);
-      @include transition('width' .5s, 'border-radius' .5s);
+      @include transition('all' .5s);
       width: 80%;
 
+      @include media-breakpoint-down(sm) {
+        max-width: 80%;
+      }
+
       button {
+        max-width: 100%;
         color: white;
         font: $font-cta;
         border: none;
@@ -95,6 +100,10 @@ header {
         width: 100%;
         border-radius: 0;
         cursor: pointer;
+
+        @include media-breakpoint-down(sm) {
+          max-width: 100%;
+        }
       }
     }
   }
@@ -104,9 +113,7 @@ header {
   //      font-size: 35px;
   //    }
   //
-  //    @include media-breakpoint-down(sm) {
-  //      // TODO: Mobile style for cta
-  //    }
+
   //  }
   //}
 

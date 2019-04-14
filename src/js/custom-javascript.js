@@ -67,6 +67,7 @@ $(document).ready(function () {
     cta.click(function () {
         cta.css("width", "100%");
         cta.css("border-radius", "0");
+        cta.css("max-width", "100%");
         form.slideDown();
         setTimeout(function () {
             form.removeClass("hidden");

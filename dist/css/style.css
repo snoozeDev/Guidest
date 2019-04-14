@@ -5080,14 +5080,18 @@ header {
     background: -webkit-gradient(linear, left top, right bottom, from(#56ccf2), to(#007bff));
     background: linear-gradient(to bottom right, #56ccf2, #007bff);
     border-radius: 35px;
-    -webkit-transition: "width" 0.5s, "border-radius" 0.5s;
-    transition: "width" 0.5s, "border-radius" 0.5s;
+    -webkit-transition: "all" 0.5s;
+    transition: "all" 0.5s;
     width: 80%; }
     @media (prefers-reduced-motion: reduce) {
       header .cta .cta-wrapper {
         -webkit-transition: none;
         transition: none; } }
+    @media (max-width: 767.98px) {
+      header .cta .cta-wrapper {
+        max-width: 80%; } }
     header .cta .cta-wrapper button {
+      max-width: 100%;
       color: white;
       font: 700 35px "Montserrat";
       border: none;
@@ -5096,6 +5100,9 @@ header {
       width: 100%;
       border-radius: 0;
       cursor: pointer; }
+      @media (max-width: 767.98px) {
+        header .cta .cta-wrapper:hover {
+          max-width: 100%; } }
   header .form-wrapper {
     margin-top: 2rem;
     margin-bottom: 1rem; }
