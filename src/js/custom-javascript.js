@@ -65,14 +65,17 @@ $(document).ready(function () {
     var cta = $(".cta-wrapper");
     var form = $(".form-wrapper");
     cta.click(function () {
-        cta.css("width", "100%");
+        var h = form.height();
+        form.css("height", "0");
         cta.css("border-radius", "0");
         cta.css("max-width", "100%");
-        form.slideDown();
+        form.removeClass("hidden");
+        form.animate({
+            height: h
+        }, 700);
         setTimeout(function () {
-            form.removeClass("hidden");
             $("#email").focus();
-        }, 400);
+        }, 800);
     });
 
     //Social Media
