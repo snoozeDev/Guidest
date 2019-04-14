@@ -203,12 +203,14 @@ header {
 **************/
 
 .section-block{
+  // Mark: --Section 1
   &#block-1 {
     padding: 20px 0 20px 0;
     background: $dark-blue;
     background: linear-gradient($light-blue, $dark-blue);
     color: white;
 
+    // Mark: ----Tab Nav
     .tab-wrapper{
       margin-bottom: 2rem;
 
@@ -242,6 +244,7 @@ header {
       }
     }
 
+    // Mark: ----Tab Content
     .tab-content{
       #home{
         .title{
@@ -251,10 +254,9 @@ header {
         }
       }
     }
-
-
   }
 
+  // Mark: -- Section 2
   &#block-2{
     .title{
       color: $dark-blue;
@@ -265,7 +267,7 @@ header {
       }
     }
 
-    .partner-logos{
+    .partner-logos {
       margin-bottom: 2rem;
 
       img{
