@@ -5092,6 +5092,8 @@ header {
       font: 700 35px "Montserrat";
       border: none;
       background: none; }
+      header .cta .cta-wrapper button:focus {
+        outline: none; }
     header .cta .cta-wrapper:hover {
       max-width: 100%;
       border-radius: 0;

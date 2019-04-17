@@ -94,6 +94,10 @@ header {
         font: $font-cta;
         border: none;
         background: none;
+
+        &:focus{
+          outline: none;
+        }
       }
 
       &:hover {

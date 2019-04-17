@@ -61,23 +61,50 @@ $(document).ready(function () {
         }
     }, 1000);
 
-    // Form
+    // Form - SlideDown
     var cta = $(".cta-wrapper");
-    var form = $(".form-wrapper");
+    var formWrapper = $(".form-wrapper");
     cta.click(function () {
-        var h = form.height();
-        form.css("height", "0");
+        var h = formWrapper.height();
+        formWrapper.css("height", "0");
         cta.css("border-radius", "0");
         cta.css("max-width", "100%");
-        form.removeClass("hidden");
+        formWrapper.removeClass("hidden");
         // form.css("margin-top", "10rem");
-        form.animate({
+        formWrapper.animate({
             height: h
         }, 500, "linear");
         setTimeout(function () {
             $("#email").focus();
         }, 800);
     });
+
+    function isEmail(email) {
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        return regex.test(email);
+    }
+
+    // Form - Submit
+    form = $('#email-form');
+    form.submit(function (event) {
+        event.preventDefault();
+        var email = $('#email').val();
+        if (email === ''){
+            // Email empty
+            console.log('email empty');
+        } else {
+            // Email not empty
+            console.log('email not empty');
+            if (!isEmail(email)) {
+                // Email not valid
+                console.log('email not valid');
+            } else {
+                // Email valid
+                console.log('email valid!');
+            }
+        }
+    });
+
 
     //Social Media
     // TODO: Social media window size
