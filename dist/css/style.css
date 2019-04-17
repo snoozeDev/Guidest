@@ -5035,8 +5035,6 @@ h1, h2, .h1 {
   left: 0;
   right: 0;
   background: #007bff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#56ccf2), to(#007bff));
-  background: linear-gradient(#56ccf2, #007bff);
   z-index: 1035;
   overflow: hidden;
   opacity: 1;
@@ -5076,9 +5074,7 @@ header {
   header .cta .cta-wrapper {
     margin: 20px 0 0 0;
     padding: 10px 20px 10px 20px;
-    background: #56ccf2;
-    background: -webkit-gradient(linear, left top, right bottom, from(#56ccf2), to(#007bff));
-    background: linear-gradient(to bottom right, #56ccf2, #007bff);
+    background: #007bff;
     border-radius: 35px;
     -webkit-transition: "max-width" 0.5s, "border-radius" 0.5s;
     transition: "max-width" 0.5s, "border-radius" 0.5s;
@@ -5180,8 +5176,6 @@ header {
 .section-block#block-1 {
   padding: 20px 0 20px 0;
   background: #007bff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#56ccf2), to(#007bff));
-  background: linear-gradient(#56ccf2, #007bff);
   color: white; }
   .section-block#block-1 .tab-wrapper {
     margin-bottom: 2rem; }
@@ -5232,8 +5226,7 @@ header {
 footer {
   color: white;
   padding-top: 1rem;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#007bff), to(#56ccf2));
-  background-image: linear-gradient(to bottom right, #007bff, #56ccf2);
+  background: #007bff;
   -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
   -o-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5); }

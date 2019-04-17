@@ -25,7 +25,7 @@ h1, h2, .h1{
   left: 0;
   right: 0;
   background: $dark-blue;
-  background: linear-gradient($light-blue, $dark-blue);
+  //background: linear-gradient($light-blue, $dark-blue);
   z-index: 1035;
   overflow: hidden;
   opacity: 1;
@@ -78,8 +78,8 @@ header {
     .cta-wrapper {
       margin: 20px 0 0 0;
       padding: 10px 20px 10px 20px;
-      background: $light-blue;
-      background: linear-gradient(to bottom right, $light-blue, $dark-blue);
+      background: $dark-blue;
+      //background: linear-gradient(to bottom right, $light-blue, $dark-blue);
       @include border-radius(35px);
       @include transition('max-width' .5s, 'border-radius' .5s);
       max-width: 80%;
@@ -207,7 +207,7 @@ header {
   &#block-1 {
     padding: 20px 0 20px 0;
     background: $dark-blue;
-    background: linear-gradient($light-blue, $dark-blue);
+    //background: linear-gradient($light-blue, $dark-blue);
     color: white;
 
     // Mark: ----Tab Nav
@@ -297,7 +297,8 @@ header {
 footer{
   color: white;
   padding-top: 1rem;
-  background-image: linear-gradient(to bottom right, $dark-blue, $light-blue);
+  background: $dark-blue;
+  // background-image: linear-gradient(to bottom right, $dark-blue, $light-blue);
   @include box-shadows(0 3px 10px rgba(0,0,0,0.5));
 
   a {
