@@ -15,6 +15,19 @@ h1, h2, .h1{
   font-weight: 700;
 }
 
+h3{
+  font-weight: 600;
+}
+
+p{
+  line-height: 1.5em;
+}
+
+strong{
+  font-weight: 600;
+  font-style: italic;
+}
+
 /*************
 * Mark: Loader
 **************/
@@ -147,7 +160,7 @@ header {
           font-weight: 600;
           padding: 10px 20px 10px 20px;
           color: $dark-blue;
-          @include transition("all", .1s);
+          @include transition("all", .2s);
 
           &:hover{
             color: white;
@@ -214,6 +227,36 @@ header {
     //background: linear-gradient($light-blue, $dark-blue);
     color: white;
 
+    .survey-btn{
+      width: 100%;
+
+      #plus{
+        margin-top: .5em;
+        margin-bottom: .5em;
+        font-weight: 600;
+      }
+
+      >a>button{
+        @include border-radius(2rem);
+        border: none;
+        background: white;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 20px 10px 20px;
+        color: $dark-blue;
+        @include transition("all", .2s);
+
+        &:hover{
+          color: white;
+          background: $dark-blue;
+        }
+
+        &:focus{
+          outline: none;
+        }
+      }
+    }
+
     // Mark: ----Tab Nav
     .tab-wrapper{
       margin-bottom: 2rem;
@@ -234,6 +277,7 @@ header {
             border-bottom-left-radius: .5rem;
             border-top-right-radius: 0;
             border: 1px solid white;
+
           }
 
           &#strategy-tab{
@@ -242,8 +286,6 @@ header {
             border-bottom-right-radius: .5rem;
             border-top-left-radius: 0;
           }
-
-
         }
       }
     }

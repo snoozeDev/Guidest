@@ -28,6 +28,13 @@
 @font-face {
   font-family: "Montserrat";
   font-display: swap;
+  font-style: italic;
+  font-weight: 600;
+  src: url("../fonts/Montserrat/Montserrat-SemiBoldItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype"); }
@@ -5025,6 +5032,16 @@ body {
 h1, h2, .h1 {
   font-weight: 700; }
 
+h3 {
+  font-weight: 600; }
+
+p {
+  line-height: 1.5em; }
+
+strong {
+  font-weight: 600;
+  font-style: italic; }
+
 /*************
 * Mark: Loader
 **************/
@@ -5129,8 +5146,8 @@ header {
       font-weight: 600;
       padding: 10px 20px 10px 20px;
       color: #007bff;
-      -webkit-transition: "all", 0.1s;
-      transition: "all", 0.1s; }
+      -webkit-transition: "all", 0.2s;
+      transition: "all", 0.2s; }
       @media (prefers-reduced-motion: reduce) {
         header .form-wrapper form .row input[type="submit"] {
           -webkit-transition: none;
@@ -5179,6 +5196,31 @@ header {
   padding: 20px 0 20px 0;
   background: #007bff;
   color: white; }
+  .section-block#block-1 .survey-btn {
+    width: 100%; }
+    .section-block#block-1 .survey-btn #plus {
+      margin-top: .5em;
+      margin-bottom: .5em;
+      font-weight: 600; }
+    .section-block#block-1 .survey-btn > a > button {
+      border-radius: 2rem;
+      border: none;
+      background: white;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 10px 20px 10px 20px;
+      color: #007bff;
+      -webkit-transition: "all", 0.2s;
+      transition: "all", 0.2s; }
+      @media (prefers-reduced-motion: reduce) {
+        .section-block#block-1 .survey-btn > a > button {
+          -webkit-transition: none;
+          transition: none; } }
+      .section-block#block-1 .survey-btn > a > button:hover {
+        color: white;
+        background: #007bff; }
+      .section-block#block-1 .survey-btn > a > button:focus {
+        outline: none; }
   .section-block#block-1 .tab-wrapper {
     margin-bottom: 2rem; }
     .section-block#block-1 .tab-wrapper .nav-tabs {
