@@ -86,29 +86,29 @@ $(document).ready(function () {
         window.open("https://www.facebook.com/sharer/sharer.php?u="+window.location.href+"&t="+document.title, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=300');
     });
     // - TWITTER
-    var getWindowOptions = function() {
-        var width = 500;
-        var height = 350;
-        var left = (window.innerWidth / 2) - (width / 2);
-        var top = (window.innerHeight / 2) - (height / 2);
-
-        return [
-            'resizable,scrollbars,status',
-            'height=' + height,
-            'width=' + width,
-            'left=' + left,
-            'top=' + top,
-        ].join();
-    };
-    var twitterBtn = document.querySelector('.twitter');
-    var text = encodeURIComponent('Go and check out this contest to win a free tour of Saint Malo ! #guidest');
-    var shareUrl = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent("https://voyages-corsaire.000webhostapp.com/") + '&text=' + text;
-    twitterBtn.href = shareUrl; // 1
-
-    twitterBtn.addEventListener('click', function(e) {
-        console.log('click');
-        e.preventDefault();
-        var win = window.open(shareUrl, 'ShareOnTwitter', getWindowOptions());
-        win.opener = null; // 2
-    });
+    // var getWindowOptions = function() {
+    //     var width = 500;
+    //     var height = 350;
+    //     var left = (window.innerWidth / 2) - (width / 2);
+    //     var top = (window.innerHeight / 2) - (height / 2);
+    //
+    //     return [
+    //         'resizable,scrollbars,status',
+    //         'height=' + height,
+    //         'width=' + width,
+    //         'left=' + left,
+    //         'top=' + top,
+    //     ].join();
+    // };
+    // var twitterBtn = document.querySelector('.twitter');
+    // var text = encodeURIComponent('Go and check out this contest to win a free tour of Saint Malo ! #guidest');
+    // var shareUrl = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent("https://voyages-corsaire.000webhostapp.com/") + '&text=' + text;
+    // twitterBtn.href = shareUrl; // 1
+    //
+    // twitterBtn.addEventListener('click', function(e) {
+    //     console.log('click');
+    //     e.preventDefault();
+    //     var win = window.open(shareUrl, 'ShareOnTwitter', getWindowOptions());
+    //     win.opener = null; // 2
+    // });
 });
