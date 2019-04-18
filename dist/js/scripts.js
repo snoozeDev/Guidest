@@ -4536,7 +4536,13 @@ $(document).ready(function () {
                 console.log('email not valid');
             } else {
                 // Email valid
-                console.log('email valid!');
+                console.log('email valid');
+                $('#form-btn').hide();
+                $('.input-wrapper').animate({
+                    opacity: 0,
+                    height: 0
+                }, 200);
+                $('#thank-you').animate({opacity: 100},200)
             }
         }
     });
@@ -4565,7 +4571,7 @@ $(document).ready(function () {
     // };
     // var twitterBtn = document.querySelector('.twitter');
     // var text = encodeURIComponent('Go and check out this contest to win a free tour of Saint Malo ! #guidest');
-    // var shareUrl = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent("https://voyages-corsaire.000webhostapp.com/") + '&text=' + text;
+    // var shareUrl = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent("https://guidest.000webhostapp.com/") + '&text=' + text;
     // twitterBtn.href = shareUrl; // 1
     //
     // twitterBtn.addEventListener('click', function(e) {
