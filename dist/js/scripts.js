@@ -4480,7 +4480,7 @@ $(document).ready(function () {
     });
 
     // Countdown timer
-    var countDownDate = new Date("Apr 18, 2019 17:00:00").getTime();
+    var countDownDate = new Date("Apr 29, 2019 17:00:00").getTime();
     var x = setInterval(function () {
         var now = new Date().getTime();
         var distance = countDownDate - now;
